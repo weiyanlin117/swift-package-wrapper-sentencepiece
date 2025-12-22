@@ -122,8 +122,9 @@ let package = Package(
                 "third_party/absl/flags/flag.cc",
                 "third_party/absl/log/log.cc",
             ],
-            publicHeadersPath: "src",
+            publicHeadersPath: "include",
             cxxSettings: [
+                .headerSearchPath("include"),
                 .headerSearchPath("src"),
                 .headerSearchPath("src/builtin_pb"),
                 .headerSearchPath("third_party"),

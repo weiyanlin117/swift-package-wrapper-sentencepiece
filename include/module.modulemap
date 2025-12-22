@@ -1,0 +1,7 @@
+module sentencepiece [system] {
+    header "src/sentencepiece_processor.h"
+    header "src/sentencepiece_trainer.h"
+
+    export *
+    link "c++"
+}
